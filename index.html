@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Forgot Password</h2>
+    <p>Enter your email or phone to reset your password.</p>
+    <form id="resetForm">
+      <div class="form-group">
+        <label for="emailOrPhone">Email or Phone:</label>
+        <input type="text" id="emailOrPhone" name="emailOrPhone" required>
+      </div>
+      <button type="submit" onclick="sendVerification()">Send Verification Code</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
